@@ -15,7 +15,7 @@
 
 # Inherit some common and LineageOS stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/havoc/config/common.mk)
 
 $(call inherit-product, device/motorola/harpia/full_harpia.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n.mk)
@@ -29,7 +29,7 @@ TARGET_USE_OLD_SOUND_PICKER := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := harpia
-PRODUCT_NAME := lineage_harpia
+PRODUCT_NAME := havoc_harpia
 PRODUCT_MODEL := Moto G Play
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola

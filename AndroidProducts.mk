@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018 The havocOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the
 # "License"); you may not use this file except in compliance
@@ -14,9 +14,9 @@
 # language governing permissions and limitations under the
 # License.
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/lineage_harpia.mk
+   $(LOCAL_DIR)/havoc_harpia.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_harpia-eng \
-    lineage_harpia-userdebug \
-    lineage_harpia-user
+    havoc_harpia-eng \
+    havoc_harpia-userdebug \
+    havoc_harpia-user
