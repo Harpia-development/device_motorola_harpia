@@ -14,9 +14,9 @@
 # language governing permissions and limitations under the
 # License.
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/lineage_harpia.mk
+   $(LOCAL_DIR)/aicp_harpia.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_harpia-eng \
-    lineage_harpia-userdebug \
-    lineage_harpia-user
+    aicp_harpia-eng \
+    aicp_harpia-userdebug \
+    aicp_harpia-user
