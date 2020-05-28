@@ -1,5 +1,5 @@
 # Copyright (C) 2016 The CyanogenMod Project
-#               2017 The lineageOS Project
+#               2017-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,17 +17,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-$(call inherit-product, device/motorola/harpia/full_harpia.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n.mk)
+# Inherit from harpia device
+$(call inherit-product, device/motorola/harpia/device.mk)
 
-# Boot animation
-TARGET_SCREEN_WIDTH := 720
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_BOOT_ANIMATION_RES := 720
-TARGET_BOOTANIMATION_HALF_RES := true
-TARGET_USE_OLD_SOUND_PICKER := true
-
-# Device identifier. This must come after all inclusions
+## Device identifier. This must come after all inclusions
+BUILD_FINGERPRINT := motorola/harpia/harpia:6.0.1/MPI24.241-15.3/3:user/release-keys
 PRODUCT_DEVICE := harpia
 PRODUCT_NAME := lineage_harpia
 PRODUCT_MODEL := Moto G Play
@@ -35,13 +29,4 @@ PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := harpia
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="harpia-user 7.1.1 NPIS26.48-36-5 12 release-keys"
-
-BUILD_FINGERPRINT := motorola/harpia/harpia:7.1.1/NPIS26.48-36-5/12:user/release-keys
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=$(BUILD_FINGERPRINT)
-
-# Use Jelly
-TARGET_USE_JELLY := true
+PRODUCT_GMS_CLIENTID_BASE := android-motorola

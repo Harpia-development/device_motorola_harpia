@@ -17,6 +17,5 @@ PRODUCT_MAKEFILES := \
    $(LOCAL_DIR)/lineage_harpia.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_harpia-eng \
     lineage_harpia-userdebug \
-    lineage_harpia-user
+    lineage_harpia-eng
